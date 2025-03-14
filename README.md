@@ -21,6 +21,9 @@ nip vue
 
 Then it will prompts you to select the catalog to install the package to, and update `pnpm-workspace.yaml` and `package.json` for you.
 
+![Image](https://github.com/user-attachments/assets/a300868e-95fd-4f93-984b-0ed638b90485)
+
+![Image](https://github.com/user-attachments/assets/45d1b47b-8c3e-4bd2-912d-e4fdfbf886af)
 You can also explictly set the catalog with `--catalog` flag.
 
 ```bash
@@ -29,7 +32,7 @@ nip vue --catalog frontend
 
 ## Why?
 
-- `pnpm` currently lacking of the `--catalog` option to directly install to catalog, resulting in quite a few manual operations. While pnpm's current codebase structure is a bit too complex to add this feature as an outside contributor.
+- `pnpm` is currently lacking of the `--catalog` option to directly install packages to catalog, resulting in quite a few manual operations to maintain the catalogs. On the other hand, pnpm's current codebase structure is a bit too complex to add this feature as an outside contributor. So this tool is more like a quick workaround.
 - Sometimes the dependency might already presented in the workspace/catalogs. This tool would pick existing version/catalog automatically.
 - My workflow might be a bit opinionated (will write a blog post to explain!)
 
