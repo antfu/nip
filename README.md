@@ -6,7 +6,10 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
-A better `pnpm install xxx` with prompts and catalogs support
+A better `pnpm install xxx` with prompts and catalogs support.
+
+> [!NOTE]
+> This CLI is [pnpm](https://pnpm.io/)-specific and opinionated, you might want to check [`@antfu/ni`](https://github.com/antfu-collective/ni) instead.
 
 ```bash
 pnpm i @antfu/nip
