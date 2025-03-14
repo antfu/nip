@@ -1,0 +1,38 @@
+packages:
+  - playground
+  - docs
+  - packages/*
+  - examples/*
+catalogs:
+  cli:
+    '@antfu/eslint-config': ^4.10.1
+    bumpp: ^10.1.0
+    eslint: ^9.22.0
+    lint-staged: ^15.5.0
+    simple-git-hooks: ^2.11.1
+    tsx: ^4.19.3
+    typescript: ^5.8.2
+    unbuild: ^3.5.0
+    vite: ^6.2.1
+  inlined:
+    '@antfu/utils': ^9.1.0
+  prod:
+    '@antfu/ni': ^24.2.0
+    '@clack/prompts': ^0.10.0
+    ansis: ^3.17.0
+    cac: ^6.7.14
+    fast-npm-meta: ^0.3.1
+    find-up: ^7.0.0
+    package-manager-detector: ^1.0.0
+    pnpm-workspace-yaml: ^0.3.1
+  testing:
+    vitest: ^3.0.8
+    vitest-package-exports: ^0.1.1
+    yaml: ^2.7.0
+  types:
+    '@types/node': ^22.13.10
+  utils:
+    tinyexec: ^0.3.2
+onlyBuiltDependencies:
+  - esbuild
+  - simple-git-hooks
