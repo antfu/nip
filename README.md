@@ -24,7 +24,7 @@ Then it will prompts you to select the catalog to install the package to, and up
 ![Image](https://github.com/user-attachments/assets/a300868e-95fd-4f93-984b-0ed638b90485)
 
 ![Image](https://github.com/user-attachments/assets/45d1b47b-8c3e-4bd2-912d-e4fdfbf886af)
-You can also explictly set the catalog with `--catalog` flag.
+You can also explicitly set the catalog with `--catalog` flag.
 
 ```bash
 nip vue --catalog frontend
