@@ -9,8 +9,7 @@
 A better `pnpm install xxx` with prompts and catalogs support.
 
 > [!NOTE]
-> This CLI is [pnpm](https://pnpm.io/)-specific and opinionated, you might want to check [`@antfu/ni`](https://github.com/antfu-collective/ni) instead.
-
+> This CLI is [pnpm](https://pnpm.io/)-specific and opinionated, you might want to use [`@antfu/ni`](https://github.com/antfu-collective/ni) for other scenarios.
 ```bash
 pnpm i @antfu/nip
 ```
