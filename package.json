@@ -1,7 +1,7 @@
 {
   "name": "@antfu/nip",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.9.0",
   "description": "A better pnpm install xxx with prompts and catalogs support",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
