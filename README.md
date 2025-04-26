@@ -55,13 +55,13 @@ nip vue --catalog frontend
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/nip?style=flat&colorA=080f12&colorB=1fa669
-[npm-version-href]: https://npmjs.com/package/nip
-[npm-downloads-src]: https://img.shields.io/npm/dm/nip?style=flat&colorA=080f12&colorB=1fa669
-[npm-downloads-href]: https://npmjs.com/package/nip
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/nip?style=flat&colorA=080f12&colorB=1fa669&label=minzip
-[bundle-href]: https://bundlephobia.com/result?p=nip
+[npm-version-src]: https://img.shields.io/npm/v/@antfu/nip?style=flat&colorA=080f12&colorB=1fa669
+[npm-version-href]: https://npmjs.com/package/@antfu/nip
+[npm-downloads-src]: https://img.shields.io/npm/dm/@antfu/nip?style=flat&colorA=080f12&colorB=1fa669
+[npm-downloads-href]: https://npmjs.com/package/@antfu/nip
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/@antfu/nip?style=flat&colorA=080f12&colorB=1fa669&label=minzip
+[bundle-href]: https://bundlephobia.com/result?p=@antfu/nip
 [license-src]: https://img.shields.io/github/license/antfu/nip.svg?style=flat&colorA=080f12&colorB=1fa669
 [license-href]: https://github.com/antfu/nip/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/nip
+[jsdocs-href]: https://www.jsdocs.io/package/@antfu/nip
