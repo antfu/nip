@@ -201,7 +201,7 @@ cli
       const result = await p.confirm({
         message: c.green`looks good?`,
       })
-      if (!result) {
+      if (!result || p.isCancel(result)) {
         p.log.error('aborting')
         p.outro()
         process.exit(1)
