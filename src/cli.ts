@@ -17,6 +17,7 @@ const cli = cac('@antfu/nip')
 cli
   .command('[...names]', 'Package names to install')
   .option('--catalog [name]', 'Install from a specific catalog, auto detect if not provided')
+  .option('--yes', 'Skip prompt confirmation')
   .allowUnknownOptions()
   .action(async (names: string[], options: {
     _: string[]
@@ -25,6 +26,7 @@ cli
     workspace: boolean
     w: boolean
     catalog: string | boolean
+    yes: boolean
   }) => {
     header()
 
@@ -195,13 +197,15 @@ cli
     }
     p.note(c.reset(contents.join('\n')), `install packages to ${c.dim(targetPackageJSON)}`)
 
-    const result = await p.confirm({
-      message: c.green`looks good?`,
-    })
-    if (!result) {
-      p.log.error('aborting')
-      p.outro()
-      process.exit(1)
+    if (!options.yes) {
+      const result = await p.confirm({
+        message: c.green`looks good?`,
+      })
+      if (!result) {
+        p.log.error('aborting')
+        p.outro()
+        process.exit(1)
+      }
     }
 
     const isDev = options.dev || options.d
