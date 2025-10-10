@@ -84,6 +84,15 @@ cli
       .then(async r => r.parsePnpmWorkspaceYaml(await readFile(pnpmWorkspaceYamlPath, 'utf-8')))
     const workspaceJson = workspaceYaml.toJSON()
 
+    // Get all workspace packages
+    const workspacePackagesPatterns = workspaceJson?.packages ?? []
+    const workspacePackages = await import('@pnpm/workspace.find-packages')
+      .then(async (r) => {
+        const packages = await r.findWorkspacePackagesNoCheck(dirname(pnpmWorkspaceYamlPath), { patterns: workspacePackagesPatterns })
+        return packages.map(i => i.manifest.name).filter((n): n is string => !!n)
+      })
+      .catch(() => [] as string[])
+
     const parsed = names.map(x => x.trim()).filter(Boolean).map(parseSpec)
     let catalog = options.catalog
     if (catalog === true)
@@ -95,6 +104,12 @@ cli
 
       if (pkg.specifier) {
         pkg.specifierSource ||= 'user'
+        continue
+      }
+
+      if (!pkg.catalog && !pkg.specifier && workspacePackages.includes(pkg.name)) {
+        pkg.specifier = 'workspace:*'
+        pkg.specifierSource = 'workspace'
         continue
       }
 
@@ -140,6 +155,9 @@ cli
     let lastSelectedCatalog: string | null = null
     for (const pkg of parsed) {
       if (pkg.catalog)
+        continue
+
+      if (pkg.specifierSource === 'workspace')
         continue
 
       const result: string | symbol = await p.select({
