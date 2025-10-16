@@ -33,7 +33,7 @@ nip vue --catalog frontend
 
 - `pnpm` is currently lacking of the `--catalog` option to directly install packages to catalog, resulting in quite a few manual operations to maintain the catalogs. On the other hand, pnpm's current codebase structure is a bit too complex to add this feature as an outside contributor. So this tool is more like a quick workaround.
 - Sometimes the dependency might already presented in the workspace/catalogs. This tool would pick existing version/catalog automatically.
-- My workflow might be a bit opinionated (will write a blog post to explain!)
+- My workflow might be a bit opinionated, FYI: [Categorize Your Dependencies](https://antfu.me/posts/categorize-deps)
 
 ## Todos
 
