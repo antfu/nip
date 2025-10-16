@@ -20,6 +20,7 @@ catalogs:
   prod:
     '@antfu/ni': ^24.3.0
     '@clack/prompts': ^0.10.1
+    '@pnpm/workspace.find-packages': ^1000.0.40
     ansis: ^3.17.0
     cac: ^6.7.14
     fast-npm-meta: ^0.4.2
