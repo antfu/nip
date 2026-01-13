@@ -37,7 +37,7 @@ nip vue --catalog frontend
 
 ## Todos
 
-- [ ] Support inferring current workspace packages and fill `workspace:*` automatically.
+- [x] Support inferring current workspace packages and fill `workspace:*` automatically.
 - [ ] Prompts to edit entries (if select "no" in "looks good")
 
 ## Sponsors
