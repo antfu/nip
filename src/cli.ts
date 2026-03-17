@@ -23,6 +23,7 @@ cli
     _: string[]
     dev: boolean
     d: boolean
+    D: boolean
     workspace: boolean
     w: boolean
     catalog: string | boolean
@@ -226,7 +227,7 @@ cli
       }
     }
 
-    const isDev = options.dev || options.d
+    const isDev = options.dev || options.d || options.D
 
     for (const pkg of parsed) {
       if (pkg.catalog)
