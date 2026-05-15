@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> This project is **DEPRECATED**. Try [nai](https://github.com/LittleSound/nai) by [LittleSound](https://github.com/LittleSound) for an interactive experience, or just [ni](https://github.com/antfu-collective/ni), since [it now supports catalogs](https://github.com/antfu-collective/ni/pull/323).
+
+---
+
+
 # nip
 
 [![npm version][npm-version-src]][npm-version-href]
